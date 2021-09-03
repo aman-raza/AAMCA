@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Nav Bar Style</title>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+
+            <nav class="nav-bar">
+                <div class="title">
+                    <h2>AAMCA</h2>
+                </div>
+                <div class="menu">
+                    <a  href="gallery.html"><button>Gallery</button></a>
+                    <a  href="#"><button>contact</button></a>
+                    <a href="#"><button>Prospectus</button></a>
+                    <a href="#"><button>Videos</button></a>
+                </div>
+                <div class="nigbtn">
+                    <button id="night"><box-icon type='solid' name='moon' color='black'></box-icon>Night</button>
+                </div>
+            </nav>
+
+
+            <section class="mainmiddle">
+            <div class="middle-bar">
+                <div class="para">
+                    <h1>Adhin Ajablal Manjhi children's academy,Katihar</h1>
+                    <p>Established 1967 , Affiliated to CBSE</p>
+                </div>
+                <div class="logo">
+                    <img src="AAMCA logo.png" style="width: 100% 100%;">
+                </div>
+            </div>
+            
+            </section>
+
+
+        </header>
+    </body>
+</html>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: ubuntu;
+    }
+    .nav-bar{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu{
+        line-height: 65px;
+    }
+    .menu button{
+        text-transform: uppercase;
+        background: transparent;
+        border: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        outline: none;
+        margin: 20px;
+    }
+    .menu button:hover{
+        border-bottom: 2px solid rgb(218, 49, 77);
+        border-width: 5%;
+        color: rgb(218, 49, 77);
+    }
+    .nigbtn{
+        margin-top: 13px;
+    }
+    .nigbtn button{
+        padding: 15px;
+        text-transform: uppercase;
+        background: rgb(218, 49, 77);
+        color: white;
+        border: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        outline: none;
+    }
+    .middle-bar{
+        width: 100% 100%;
+        height: 400px;
+        background: url(background6.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .logo{
+        padding-top: 20px;
+        height: auto;
+        margin-top: 7%;
+}
+    .para{
+        margin-top: 9%;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+}
+</style>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Video gallery</title>
+        <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    </head>
+    <body>
+        <div style="display:none;" id="video1">
+            <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+                <source href="https://www.youtube.com/watch?v=OIRC7Uovq2k" type="video/mp4">
+                 Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div style="display:none;" id="video2">
+            <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+                <source src="videos/video2.mp4" type="video/mp4">
+                 Your browser does not support HTML5 video.
+            </video>
+        </div>
+         
+        <!-- data-src should not be provided when you use html5 videos -->
+        <ul id="video-gallery">
+          <li data-poster="video-poster1.jpg" data-sub-html="video caption1" data-html="#video1" >
+              <img src="img/thumb1.jpg" />
+          </li>
+          <li data-poster="video-poster2.jpg" data-sub-html="video caption2" data-html="#video2" >
+              <img src="img/thumb2.jpg" />
+          </li>
+          ...
+        </ul>
+    </body>
+    <script>
+        $('#video-gallery').lightGallery({
+        videojs: true
+}); 
+    </script>
+</html>
